@@ -34,7 +34,7 @@ We ran ordered logistic regression and linear regresssions on this data in order
 
 ## 3. Data Import, Cleaning, and Analysis
 
-```{r Analysis}
+```{r Analysis,echo=FALSE}
 
 #uncompress data
 library(foreign)
