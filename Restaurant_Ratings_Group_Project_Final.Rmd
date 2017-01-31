@@ -3,8 +3,8 @@ title: "Restaurant Ratings Group Project - BDA January 2017"
 author: "Matt,Rachana,Sharjeel,Ahmad"
 date: "January 29, 2017"
 output:
-  pdf_document: default
   html_document: default
+  pdf_document: default
 ---
 
 ```{r setup, include=FALSE}
@@ -34,7 +34,7 @@ We ran ordered logistic regression and linear regresssions on this data in order
 
 ## 3. Data Import, Cleaning, and Analysis
 
-```{r Analysis,echo=FALSE}
+```{r}
 
 #uncompress data
 library(foreign)
@@ -266,7 +266,7 @@ The following charts are intended to allow us to visualize:
 2. the equivalence between the training and test sets with respect to the key features we focused on
 3. the geographic distribution of the restaurants in our sample 
 
-```{r Visualization, echo=FALSE}
+```{r}
 
 #visualize data
 require(ggplot2)
@@ -298,5 +298,15 @@ ggmap(map) + geom_point(
         scale_color_gradient(low="red", high="blue")
 
 ```
+
+## 5. Conclusions and Further Research
+Unfortunately we found no meaningful, statistically significant relationships between any of the features we tested and restaurant checkins or ratings. This may be due to the fact that we ultimately didn't have a big enough sample (only 5000 restaurants in our training set) to be able to differentiate between signal and noise. Possible further steps we could take to continue to explore whether there are good predictors of restaurant ratings and checkins include:  
+
+1. Analyze the review text data using a Natural Language Processing package, to assess whether there are any interesting relationships between written reviews and number of stars. For example, are reviewers who give high ratings more likely to write long reviews, or use certain key words or phrases?
+
+2. Analyze user data to understand the relationship between the frequency with which users write reviews on Yelp, and their propensity to give very high or lower ratings. 
+
+3. Analyze restaurant categories, tags, and hours, to assess whether they have any relationship with restaurant ratings and/or checkins.
+
 
 
