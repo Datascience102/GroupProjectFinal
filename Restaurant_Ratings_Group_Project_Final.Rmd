@@ -2,9 +2,7 @@
 title: "Restaurant Ratings Group Project - BDA January 2017"
 author: "Matt,Rachana,Sharjeel,Ahmad"
 date: "January 29, 2017"
-output:
-  html_document: default
-  pdf_document: default
+output: html_document
 ---
 
 ```{r setup, include=FALSE}
@@ -34,7 +32,7 @@ We ran ordered logistic regression and linear regresssions on this data in order
 
 ## 3. Data Import, Cleaning, and Analysis
 
-```{r}
+```{r analysis}
 
 #uncompress data
 library(foreign)
@@ -266,7 +264,7 @@ The following charts are intended to allow us to visualize:
 2. the equivalence between the training and test sets with respect to the key features we focused on
 3. the geographic distribution of the restaurants in our sample 
 
-```{r}
+```{r visuals}
 
 #visualize data
 require(ggplot2)
