@@ -41,8 +41,8 @@ library(foreign)
 
 #import data and create dataframes 
 library(jsonlite)
-YelpCheckins <- stream_in(file("C:/Users/Matthew/Documents/R/RestaurantRatingsProject/yelp_academic_dataset_checkin.json"),pagesize = 500)
-YelpBusinesses <- stream_in(file("C:/Users/Matthew/Documents/R/RestaurantRatingsProject/yelp_academic_dataset_business.json"),pagesize = 500)
+YelpCheckins <- stream_in(file("C:/Users/Matthew/Documents/R/GroupProjectFinal/yelp_academic_dataset_checkin.json"),pagesize = 500)
+YelpBusinesses <- stream_in(file("C:/Users/Matthew/Documents/R/GroupProjectFinal/yelp_academic_dataset_business.json"),pagesize = 500)
 
 #make each individual checkin its own row
 require(dplyr)
